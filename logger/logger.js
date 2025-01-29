@@ -20,7 +20,7 @@ class Logger {
 
     __log(level, msg) {
         const formattedMsg = formatMessage(level, msg)
-
+        
         if(process.env.APP_ENV === 'local') {
             console.log(formattedMsg)
         } else {

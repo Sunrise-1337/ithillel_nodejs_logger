@@ -4,11 +4,9 @@ function formatMessage(level, msg) {
 
     const timestemp = new Date().toISOString()
 
-    // if (msg instanceof Error) {
-    //     msg = msg.message
-    //     name = msg.name
-    // }
-
+    if (msg instanceof Error) {
+        return chalk.red(`[${timestemp}], ERROR: ${msg.message}, from exception of type ${msg.name}`)
+    }
 
     switch(level) {
         case 'info':
@@ -21,7 +19,7 @@ function formatMessage(level, msg) {
             return chalk.red(`[${timestemp}], ERROR: ${msg}`)
 
         default:
-        return chalk.gray(`[${timestemp}], UNKNOW: ${msg}`)
+            return chalk.gray(`[${timestemp}], UNKNOW: ${msg}`)
 
     }
 

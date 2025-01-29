@@ -55,3 +55,20 @@
 [31m[2025-01-23T18:56:16.890Z], ERROR: Error message[39m 
 [34m[2025-01-23T18:56:26.894Z], INFO: 2025-01-23T18:56:26.894Z[39m 
 [34m[2025-01-23T18:56:36.895Z], INFO: 2025-01-23T18:56:36.895Z[39m 
+[31m[2025-01-29T16:46:01.134Z], ERROR: Info message, from exception of type Error[39m 
+[31m[2025-01-29T16:46:01.154Z], ERROR: Warning message, from exception of type Error[39m 
+[31m[2025-01-29T16:46:01.156Z], ERROR: Error message, from exception of type Error[39m 
+
+
+
+
+[34m[2025-01-29T16:46:52.005Z], INFO: Info message[39m 
+[33m[2025-01-29T16:46:52.007Z], WARNING: Warning message[39m 
+[31m[2025-01-29T16:46:52.007Z], ERROR: Info message, from exception of type Error[39m 
+[31m[2025-01-29T16:46:52.007Z], ERROR: Warning message, from exception of type Error[39m 
+[31m[2025-01-29T16:46:52.007Z], ERROR: Error message, from exception of type Error[39m 
+[34m[2025-01-29T16:48:23.052Z], INFO: Info message[39m 
+[33m[2025-01-29T16:48:23.054Z], WARNING: Warning message[39m 
+[31m[2025-01-29T16:48:23.054Z], ERROR: Warning message, from exception of type Error[39m 
+[31m[2025-01-29T16:48:23.054Z], ERROR: Info message, from exception of type Error[39m 
+[31m[2025-01-29T16:48:23.054Z], ERROR: Error message, from exception of type Error[39m 
