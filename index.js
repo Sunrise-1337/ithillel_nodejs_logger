@@ -1,9 +1,7 @@
-import Logger from "./logger/logger.js";
+import sleeper from "./sleeper.js";
 
-const logger  = new Logger()
+console.log('Start script')
 
-logger.info('Info message')
-logger.warning("Warning message")
-logger.info(new Error("Info message"))
-logger.warning(new Error("Warning message"))
-logger.error(new Error("Error message"))
+await sleeper(10000)
+
+console.log('Finish script')
