@@ -1,4 +1,5 @@
 import chalk from "chalk";
+import levelsConstants from "../constants/levels.constants.js";
 
 function formatMessage(level, msg) {
 
@@ -9,13 +10,13 @@ function formatMessage(level, msg) {
     }
 
     switch(level) {
-        case 'info':
+        case levelsConstants.INFO:
             return chalk.blue(`[${timestemp}], INFO: ${msg}`)
 
-        case 'warning':
+        case levelsConstants.WARNING:
             return chalk.yellow(`[${timestemp}], WARNING: ${msg}`)
 
-        case 'error':
+        case levelsConstants.ERROR:
             return chalk.red(`[${timestemp}], ERROR: ${msg}`)
 
         default:

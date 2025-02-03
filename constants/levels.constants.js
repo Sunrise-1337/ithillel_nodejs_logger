@@ -1,8 +1,8 @@
 
-const levels = {
+const levelsConstants = {
     INFO: "info",
     WARNING: "warning",
     ERROR: "error"
 }
 
-export default levels
+export default levelsConstants
