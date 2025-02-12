@@ -2,7 +2,10 @@ import chalk from "chalk";
 import levelsConstants from "../constants/levels.constants.js";
 
 function formatMessage(level, msg) {
+    return getMessageBody(level, msg) + '\n'
+}
 
+function getMessageBody(level, msg) {
     const timestemp = new Date().toISOString()
 
     if (msg instanceof Error) {
@@ -23,7 +26,6 @@ function formatMessage(level, msg) {
             return chalk.gray(`[${timestemp}], UNKNOW: ${msg}`)
 
     }
-
 }
 
 export default formatMessage
